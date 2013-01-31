@@ -1,0 +1,18 @@
+!!! 5
+html
+  head
+    include meta
+    link(rel="stylesheet", type="text/css", href="/css/styles.css")
+    link(rel="stylesheet", type="text/css", href="/css/dark.css")
+    title Feedback Web Control
+    include analytics
+  body
+    #page
+      #page_inner
+        include vote
+
+        #container
+          block content
+
+        #footer
+          include footer

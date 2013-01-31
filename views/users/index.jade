@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  include form
+
+  link(rel='stylesheet', type='text/css', href='/build/build.css')
+  script(type='text/javascript', src='/build/build.js')
+  script(type='text/javascript')
+    var Feedbacks = require('oivoodoo-feedbacks');
+    new Feedbacks({
+      key: "ab65ebb88f2ac2251733ba4ec89eb75a",
+      url: "/emails"
+    })

@@ -1,0 +1,27 @@
+{
+  "name": "nko3-pixie",
+  "version": "0.0.0-26",
+  "description": "pixie",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nko3/pixie.git"
+  },
+  "dependencies": {
+    "express": "~ 3.0.1",
+    "jade": "~ 0.27.6",
+    "component": "> 0.0.1",
+    "mongoose": "> 0.0.1",
+    "ratchetio": "> 0.0.1",
+    "stylus": "> 0.0.1",
+    "highlight": "> 0.0.1",
+    "emailjs": "> 0.0.1"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "subdomain": "pixie.nko3"
+}

@@ -1,0 +1,131 @@
+#feedbacks {
+  height:auto;
+  position:fixed;
+  top:150px;
+  font: 12px Georgia, Verdana, Lucida Sans Unicode, sans-serif;
+  color: #6F6F6F;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#feedbacks.left {
+  left:-38px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+  -o-transform: rotate(-90deg); /* Opera */
+  -moz-transform: rotate(-90deg); /* Firefox */
+}
+
+#feedbacks.right {
+  right:-38px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+  -o-transform: rotate(-90deg); /* Opera */
+  -moz-transform: rotate(-90deg); /* Firefox */
+}
+
+/* Buttons */
+#feedbacks.button1 {
+  background: rgba(131, 178, 51, 0.65);
+}
+
+ #feedbacks.button2 {
+  background: rgba(196, 89, 30, 0.65);
+}
+
+#feedbacks.button3 {
+  background: rgba(65, 117, 160, 0.65):
+}
+
+#feedbacks.button4 {
+  background: rgba(115, 62, 78, 0.65);
+}
+
+#feedbacks span {
+  text-shadow: rgba(6, 6, 6, 0.598) 1px 1px;
+  display:block;
+  font-size: 20px;
+  color: #666;
+  width: auto;
+  height: auto;
+  padding: 5px 15px;
+}
+
+#feedbacks span:hover {
+  color: white;
+  transition: all height .2s ease-in-out;
+  -moz-transition: all height .2s ease-in-out; /* Firefox 4 */
+  -webkit-transition: all height .2s ease-in-out; /* Safari and Chrome */
+  -o-transition: all height .2s ease-in-out; /* Opera */
+  transform:scale(1.1);
+  -ms-transform:scale(1.1); /* IE 9 */
+  -moz-transform:scale(1.1); /* Firefox */
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+  -o-transform:scale(1.1); /* Opera */
+}
+
+#dialog {
+  width: inherit !important;
+  height: inherit !important;
+}
+
+/* Dialog */
+#dialog input[type='email'], textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 7px 7px 3px 7px;
+  border: 1px solid #666;
+  width: 90%;
+}
+
+#dialog textarea {
+  height: 80px;
+}
+
+#dialog input[type='submit'] {
+  background: #EEE;
+  background: -moz-linear-gradient(top, #EEE 0%, #CCC 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#CCC));
+  border: 1px solid #CCC;
+  border-bottom: 1px solid #BBB;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #333;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 0;
+  text-align: center;
+  text-shadow: 0 1px 0 #EEE;
+  width: 80px;
+}
+
+#dialog input[type='submit']:hover {
+  background: #DDD;
+  background: -moz-linear-gradient(top, #DDD 0%, #BBB 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDD), to(#BBB));
+  border: 1px solid #BBB;
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+}
+
+#dialog .actions {
+  margin-top: 10px;
+}

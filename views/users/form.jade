@@ -1,0 +1,37 @@
+#contacts.block
+  h1 Do you want to get a new feedback widget?
+  form(action='/users', method='post')
+    input(type='hidden', name='_method', value='post')
+    label(for='user[email]') Email:
+    input(type='email', name='user[email]', id='user_email', placeholder='Email')
+    br
+    div
+      input(type='submit', value='Register', id="send_button")
+
+#description.block
+  h1 What you will get as result using my widget?
+  p
+    | Definitely, candies :) And an awesome
+    a(href='#').contact feedback button
+
+#thanks
+  h1 Thanks to guys that's supporting libraries:
+  p
+    a(href='http://nodejs.org/', target='_blank').contact nodejs
+    | &nbsp,&nbsp
+    a(href='http://expressjs.com/', target='_blank').contact expressjs
+    | &nbsp,&nbsp
+    a(href='http://github.com/LearnBoost/mongoose', target='_blank').contact mongoose
+    | &nbsp,&nbsp
+    a(href='http://jade-lang.com', target='_blank').contact jade
+    | &nbsp,&nbsp
+    a(href='http://github.com/component/', target='_blank').contact component
+    | &nbsp,&nbsp
+    a(href='https://github.com/LearnBoost/stylus', target='_blank').contact stylus
+    | &nbsp,&nbsp
+    a(href='https://github.com/andris9/highlight', target='_blank').contact highlight
+    | &nbsp,&nbsp
+    a(href='https://github.com/eleith/emailjs', target='_blank').contact emailjs
+    | &nbsp,&nbsp
+    a(href='http://rachet.io', target='_blank').contact rachet.io
+

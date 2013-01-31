@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  #user.block
+    h1 User details
+    h3= user.email
+    h3= user.key
+
+  #code.block
+    h1 Code for installation:
+    pre#editor
+      code
+        | !{example}
+
+  link(rel='stylesheet', type='text/css', href='/build/build.css')
+  script(type='text/javascript', src='/build/build.js')
+  script(type='text/javascript')
+    var Feedbacks = require('oivoodoo-feedbacks');
+    new Feedbacks({
+      key: '#{user.key}',
+      url: "/emails"
+    })
+

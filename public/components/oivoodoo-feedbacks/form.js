@@ -1,0 +1,1 @@
+module.exports = '<form>\n  <label for="email">Contact email:</label>\n  <input type="email" name="email" placeholder="Email">\n  <br />\n  <label for="message">Message:</label>\n  <textarea name="message"></textarea>\n\n  <div class=\'actions\'>\n    <input type="submit" value="Send" />\n  </div>\n</div>\n\n';
